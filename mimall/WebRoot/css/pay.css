@@ -1,0 +1,287 @@
+	*{
+				margin: 0px;
+				padding: 0px;
+			}
+			#btn1{
+				height: 600px;
+				background-color: rgb(245 245 245);
+			}
+			#top{
+				height: 102px;
+				border-bottom: 2px solid #ff6700;
+				background-color: #FFFFFF;
+			}
+			#top1{
+				width: 1100px;
+				height: 74px;
+				margin: 0px 20px 0px 70px;
+				
+			}
+			#top11{
+				float: left;
+				width: 93px;
+				height: 74px;	
+			}
+			#top11:hover{
+				cursor: pointer;
+			}
+			#top111{
+				width: 45px;
+				height: 45px;
+				margin-top:29px ;
+				
+			}
+			#top12{
+				float: left;
+				width: 112px;
+				height: 74px;
+				
+				
+			}
+			#top122{
+				float: left;
+				width: 112px;
+				height: 45px;
+				margin-top: 31px;
+				font-size: 25px;
+				color: black;
+			}
+			#top13{
+				float: right;
+				width: 172px;
+				height: 74px;
+				
+			}
+			#top133{
+				float: right;
+				width: 150px;
+				height: 30px;
+				margin-top: 35px;
+				
+			}
+			.dingdan{
+				text-decoration: none;
+				width: 50px;
+				height: 20px;
+				font-size: 12px;
+				color: #757575;;
+				
+			}
+			.sep{ 			
+				width: 3px;
+				height: 40px;
+				color: #E0E0E0;				
+			}
+			.user{
+				text-decoration: none;
+				width: 80px;
+				height: 40px;
+				color: #757575;
+			}
+			/*.user>a>name:hover{
+				color: rgb(239 91 0);
+			}*/
+			.name{
+				text-decoration: none;
+				width: 67px;
+				height: 40px;
+				font-size: 12px;
+				color: #757575;
+			}
+			.name:hover{
+				cursor: pointer;
+				color: #FF6700;
+			}
+			.iconfont{
+				text-decoration: none;
+				width: 13px;
+				height: 10px;
+			}
+			#zhong{
+				position: relative;
+				height: 498px;
+				background-color: rgb(245 245 245);
+			}
+			#z1{
+				position: absolute;
+				width: 1100px;
+				height: 460px;
+				margin: 38px 20px 0px 70px;
+				background-color: #FFFFFF;
+			}
+			#z11{
+				width: 1100px;
+				height: 230px;
+				background-color: rgb(245 245 245);
+				
+			}
+			#z111{
+				position: relative;
+				width: 1100px;
+				height: 200px;
+				background-color: #FFFFFF;
+				
+			}
+			#z1111{
+				position: absolute;
+				width: 895px;
+				height: 130px;
+				margin: 35px 50px 35px 155px;
+				
+			}
+			.icon-right{
+				width: 80px;
+				height: 80px;
+				line-height: 80px;
+				position: absolute;
+				top: 10px;
+				left: -110px;
+				font-size: 70px;
+				color: #83c44e;
+				text-align: center;
+				border: 2px solid #83c44e;
+				border-radius: 42px;
+				overflow: hidden;
+			}
+			
+			#success{
+				height: 100px;
+				margin: 15px 0px 15px 0px;
+				
+			}
+			#success1{
+				float: left;
+				height: 100px;
+				width: 630px;
+				
+			}
+			
+			.title{
+				
+				font-size: 24px;
+				font-weight: normal;
+				line-height: 36px;
+				
+			}
+			.order-time{
+				font-size: 13px;
+				color: #616161;
+				margin-bottom: 5px;
+				line-height: 2;
+			}
+			.order-time span{
+				margin: 0px 5px;
+				
+				color: #ff6700;
+			}
+			.xy{
+				font-size: 13px;
+				color: #616161;
+				transition: height .3s ease;
+			}
+			#success2{
+				float: right;
+				width: 100px;
+				height: 82px;
+				
+			}
+			.total{
+				margin-bottom: 10px;
+				font-size: 13px;
+				color: #757575;
+			}
+			.money{
+				color: #FF6700;
+				font-size: 16px;
+				
+			}
+			a{
+				
+				font-size: 13px;
+				color: #757575;
+				text-decoration: none;
+			}
+			a:hover{
+				cursor: pointer;
+				color: #FF6700;	
+			}
+			.show-detail{
+				float: right;
+				width: 70px;
+				height: 16px;	
+			}
+			/*.show-detail:hover{
+				cursor: pointer;
+				color: #FF6700;	
+			}*/
+			
+			#z12{
+				position: relative;
+				width: 1100px;
+				height: 230px;
+				
+			}
+			#z121{
+				position: absolute;
+				width: 1000px;
+				height: 200px;
+				margin: 30px 50px 0px 50px;
+				
+			}
+			#zshang{
+				height: 70px;
+				
+			}
+			.cash-title{
+				height: 47px;
+				margin-bottom: 30px;
+				border-bottom: 1px solid #E0E0E0;
+				font-size: 18px;
+				
+			}
+			#zxia{
+				height: 130px;
+				
+				
+			}
+			.zhifu{
+				height: 40px;				
+				
+			}
+			.title1{
+				float: left;
+				font-size: 16px;
+				color: #616161;
+			}
+			.desc{
+				float: left;
+				margin-left: 10px;
+				margin-top: 6px;
+				font-size: 12px;
+				color: #b0b0b0;
+				
+			}
+			#zhifu1{
+				
+				height: 80px;
+				list-style: none;			    
+			    overflow: hidden;
+				
+			}
+			ul{
+				
+				display: table;
+			}
+			ul>li{
+				display: inline;
+				width: 80px;
+				list-style-type: none;
+			}
+			ul>li>img{
+				margin:10px;
+				width: 180px;
+			}
+			ul>li>img:hover{
+				cursor: pointer;
+				
+			}

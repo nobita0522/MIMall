@@ -1,0 +1,127 @@
+package com.mimall.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.mimall.dao.impl.KindDaoImpl;
+import com.mimall.dao.impl.ProductDaoImpl;
+import com.mimall.dao.inter.CategoryDao;
+import com.mimall.dao.inter.KindDao;
+import com.mimall.dao.inter.ProductDao;
+import com.mimall.vo.Category;
+import com.mimall.vo.Kind;
+import com.mimall.vo.Product;
+import com.page.PageInfo;
+
+public class IndexServiceImpl implements com.mimall.service.inter.IndexService {
+	private CategoryDao categoryDao;
+	private KindDao kindDao;
+	private ProductDao productDao;
+
+	@Override
+	public List<Kind> getKindByCid(Integer Cid) {
+		kindDao = new KindDaoImpl();	
+		List<Kind> list = new ArrayList<Kind>();
+		String sql = "SELECT * FROM KIND WHERE CID = "+Cid+"ORDER BY KID";
+		PageInfo pageInfo = new PageInfo();
+		pageInfo.setPerPageRecordCount(24);
+		try {
+			list = kindDao.getPageByQuery(sql);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			
+		return list;
+	}
+
+	@Override
+	public List<Product> getProductByKid(Integer Kid) {
+		productDao = new ProductDaoImpl();	
+		List<Product> list = new ArrayList<Product>();
+		String sql = "SELECT * FROM PRODUCT WHERE KID = "+Kid+"ORDER BY PID DESC";
+		PageInfo pageInfo = new PageInfo();
+		pageInfo.setPerPageRecordCount(24);
+		try {
+			list = productDao.getPageByQuery(sql);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			
+		return list;
+	}
+
+	@Override
+	public List<Product> getProductByKindName(String name) {
+		productDao = new ProductDaoImpl();	
+		List<Product> list = new ArrayList<Product>();
+		String sql = "SELECT * FROM PRODUCT WHERE KID IN (SELECT KID FROM KIND WHERE KNAME LIKE '%"+name+"%' ) AND ONSALE=1 ORDER BY PID DESC";
+		PageInfo pageInfo = new PageInfo();
+		pageInfo.setPerPageRecordCount(24);
+		try {
+			list = productDao.getPageByQuery(sql);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+			
+		return list;
+	
+	}
+
+	@Override
+	public List<Product> getProductByName(String name) {
+		productDao = new ProductDaoImpl();	
+		List<Product> list = new ArrayList<Product>();
+		String sql = "SELECT * FROM PRODUCT WHERE PNAME LIKE '%"+ name +"%' AND ONSALE=1 ORDER BY PID DESC";
+		PageInfo pageInfo = new PageInfo();
+		pageInfo.setPerPageRecordCount(24);
+		try {
+			list = productDao.getPageByQuery(sql);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}			
+		return list;
+	}
+	
+	public List<Product> getPageByQuery(String name , PageInfo pageInfo){
+		// String sql =
+		// "select * from (select c.*,rownum r from category c where 1=1 and cname='商品种类名称' or cdesc like '%商品种类描述%') where r>=1 and r<=5";
+
+		List<Product> productList= null;
+		String sql = "SELECT * FROM(select p.*,rownum r from product p where 1=1 and (PNAME LIKE '%"+name
+				+"%' OR KID IN(SELECT KID FROM KIND WHERE KNAME LIKE '%"+name+"%')) AND ONSALE=1)where rownum >="+
+				pageInfo.getBegin()+" and rownum <="+pageInfo.getEnd();
+	
+		System.out.println(sql);
+		ProductDao dao = new ProductDaoImpl();
+		try {
+			productList = dao.getPageByQuery(sql);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return productList;
+		
+	}
+	
+	
+	public int getAllCountByName(String name) {
+		int totalRecordSum = 0;
+		String sql = "SELECT count(*)  FROM PRODUCT WHERE (PNAME LIKE '%"+name+"%' OR KID IN(SELECT KID FROM KIND WHERE KNAME LIKE '%"+name+"%')) AND ONSALE=1";
+		System.out.println(sql);
+		ProductDaoImpl dao = new ProductDaoImpl();
+		try {
+			totalRecordSum = dao.getTotalRecordSum(sql);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println(">>总记录数："+totalRecordSum);
+		
+		return totalRecordSum;
+	}
+}

@@ -1,0 +1,275 @@
+*{
+			padding: 0px;
+			margin: 0px;
+			
+		}
+		
+		#top{
+	
+			height: 70px;
+			margin: 0px auto;
+			background-color: #FFFFFF;
+		}
+		#top11{
+			width: 100px;
+			height:50px ;
+			margin-left: 52px;
+			margin-top: 25px;
+			
+		}
+		#top11:hover{
+		    	cursor: pointer;
+		    }
+		#shang1{
+			height: 522px;
+			margin: 0px auto;
+			background:url(../resources/ldy/手机.jpg) center no-repeat; 
+		}
+		#shang1:hover{
+		    	cursor: pointer;
+		    }
+		#zhongs{
+			    float: right;
+				width:365px;
+				height: 480px;
+				margin-right: 100px;
+				margin-top: -490px;
+				background-color: #FFFFFF;
+			}
+		#zs{
+				width:365px;
+				height: 83px;
+				background-color: #FFFFFF;
+			}
+		#zs1{
+				float: right;
+				width: 320px;
+				height: 20px;
+			   margin-top: 25px;
+				
+				color: rgb(116 116 116) ;  
+			
+				
+			}
+		#zs1>a:hover{
+		    	cursor: pointer;
+			}
+		 #zhanghao{
+				width: 60px;
+				height: 16px;
+				font-size: 22px;
+				color: rgb(239 91 0)
+			}
+		#zhanghao:hover{
+		    	cursor: pointer;
+		    	color: rgb(239 91 0);
+		    }
+		#saoma{
+				width: 60px;
+				height: 16px;
+				font-size: 22px;
+				
+			}
+		#saoma:hover{
+		    	cursor: pointer;
+		    	color: rgb(239 91 0);
+		    }	
+		#zhong{
+				width:365px;
+				height: 370px;
+				margin-top: 0px;
+				background-color: #FFFFFF;
+			}
+			#btn1{
+				width:328px;
+				height: 44px;
+			    margin-left:18px;
+			    font-size: 12px ;
+				color: rgb(176 176 176);
+				border: 1px solid rgb(176 176 176);
+			}
+			
+			#btn2{
+				
+				width:328px;
+				margin-top:11px ;
+				margin-left:18px;
+				height: 44px;
+			    font-size: 12px ;
+				color: rgb(176 176 176);
+				border: 1px solid rgb(176 176 176);
+			}
+			#btn{
+				
+				width:328px;
+				margin-top:13px ;
+				margin-left:18px;
+				height: 44px;
+				
+				font-size: 12px;
+				color: #FFFFFF;
+				text-align:  center;
+				background-color: rgb(239 91 0);
+			}
+			 #btn:hover{
+		    	cursor: pointer;
+		    }
+			#xia{
+				width: 328px;
+				height: 103px;
+				margin-left:18px;
+				
+				background-color:#FFFFFF;
+				margin-top: 15px;
+				
+			}
+			
+			#wenzi1{
+				
+				float: left;
+				
+				font-size: 12px;
+				
+			}
+
+			.nav{
+				float: right;
+				width: 120px;
+				height: 20px;
+			    margin-top: -4px;
+				padding: 0;
+				color: rgb(176 176 176);
+				
+			}
+			.nav a:hover{
+				width: 40px;
+				height: 16px;
+			
+		    	cursor: pointer;
+		    
+				color: rgb(239 91 0);
+				
+			}
+			.liji{
+				width: 40px;
+				height: 16px;
+				font-size: 12px;
+			}
+			.wangji{
+				width: 60px;
+				height: 16px;
+				font-size: 12px;
+			}
+			#xxia{
+				width: 328px;
+				height: 75px;
+				margin-left: 18px;
+				background-color:#FFFFFF;
+				margin-bottom: 0px;
+				
+			}
+			#qita2{
+				width: 328px;
+				height: 20px;
+			
+				font-size: 12px;
+				color: rgb(176 176 176);
+				
+			}
+		    #qita3{
+		    	height: 30px;
+		    	text-align: center;
+		    	margin-right: 5px;
+		    	margin-top: 15px;
+		    	background-color: #FFFFFF;
+		    }
+		    #qita3>img:hover{
+		    	cursor: pointer;
+		    }
+			#xxxia{
+				clear:both;
+				background-color:#FFFFFF;
+				height: 125px;
+				margin-bottom:0px;
+				
+			}
+		
+		    
+			
+			ul{
+				clear:both;
+		    	background-color: #FFFFFF;
+		    	height: 125px;
+		    	list-style-type: none;
+		    	text-align: center;
+		    	margin-left: 470px;
+				line-height:220px;
+				margin: 0px auto;
+		    	
+		    } 
+		    ul li{
+		    	
+		    	margin: 0px auto;
+		    	display: inline;
+		    	margin-top: 100px;
+		    	margin-bottom:0px;
+		    	background-color: #FFFFFF;
+		    	
+		    }
+		    ul li a{
+		    	margin: 0px auto;
+		    	background-color: #FFFFFF;
+		    	color: rgb(117 117 117);
+		    	text-align: center;
+		    	
+		    }
+		  
+		    ul li a:hover{
+		    	width: 40px;
+		    	height: 19px;
+		    	color: black;
+		    }
+		    .dibu1{
+		    	height: 44px;
+		    	font-size: 12px;
+		    	color: rgb(117 117 117);
+		    	text-align: center;
+		    }
+		    .myspan1{
+		    	float: left;
+		    	margin-left:20px;
+		    	margin-top: 18px;
+				font-size: 12px;
+				color: rgb(239 91 0);
+				
+			}
+			#ewm{
+				float: none;
+				width: 180px;
+				height:180px;
+				margin-top: 70px;
+				margin-left: 90px;
+				background-color: #FFFFFF;
+			}
+			.row{
+				float: none;
+				width: 303px;
+				height: 52px;
+				margin-top: 10px;
+				margin-left: 50px;
+				font-size: 13px;
+			}
+			#r1{
+				width: 200px;
+				height: 20px;
+				margin-left: 60px;
+			}
+			.line{
+				width: 10px;
+				height: 24px;
+				margin: 0px 10px 0px 10px;
+				border: 1px solid #e0e0e0;
+			}
+			#mainbox{
+				min-width: 1220px;
+			}

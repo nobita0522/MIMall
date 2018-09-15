@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#main{
+    width: auto;
+    height: auto;
+    max-width: 1920px;
+    margin: 0px;
+}
+
+.box{
+    margin: auto;
+    width: 1220px;
+    height: auto;
+    background-color: yellow;
+}
+
+#daohanglan{
+    height: 120px;
+}
+
+#neirong{
+    margin-top: 10px;
+    height: 700px;
+}
+
+#neirongzuo{
+    height: 100%;
+    width: 20%;
+    border: black solid;
+    float: left;
+}
+
+#neirongyou{
+    height: 100%;
+    width: 79%;
+    border: black solid;
+    float: left;
+}
+
+#zhucaidan{
+    height: auto;
+    width: 100%;
+    background-color: red;
+    margin-top: 10px;
+    list-style-type: none;
+}
+
+#zhucaidan>li{
+    margin-top: 5px;
+    width: 100%;
+    height:auto;
+
+ /*   margin-left: -15px;*/
+}
+
+.zhucaidan{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    background-color: gray;
+}
+#zhucaidan a{
+    text-decoration: none;
+    height: 100%;
+    color: black;
+    display: block;
+}
+
+
+.cijicaidan{
+    margin-left: 10%;
+    width: 90%;
+    height: auto;
+/*    background-color: green;*/
+    display: none;
+}
+.cijicaidan ul{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    list-style-type: none;
+}
+.cijicaidan li{
+    margin: 10px 0px;
+    height: 40px;
+    line-height: 30px;
+    text-align: center;
+    background-color: green;
+}
+
+/*.cijicaidan li a{
+    height: 100%;
+    display: block;
+}*/
+
+iframe{
+    height: 100%;
+    width: 100%;
+    sc
+}
+
+
+#dilan{
+    margin-top: 10px;
+    height: 200px;
+}
